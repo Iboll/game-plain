@@ -13,7 +13,7 @@ z_height = 900
 sscreen = pygame.display.set_mode((z_width, z_height))
 pygame.display.set_caption("PILOTS'S WAR")
 # Размеры и сам стартовый экран
-pygame.mixer.music.load('C:/Users/Soltan/PycharmProjects/game-plain/data/rb.mp3')
+pygame.mixer.music.load('data//rb.mp3')
 pygame.mixer.music.play()
 
 
@@ -85,7 +85,7 @@ def start_screen():
 def final_screen():
     # Музыка финального экрана
     pygame.mixer.music.stop()
-    pygame.mixer.music.load('C:/Users/Soltan/PycharmProjects/game-plain/data/die.mp3')
+    pygame.mixer.music.load('data//die.mp3')
     pygame.mixer.music.play()
     intro_text = [f"You killed {kills} enemies",
                   f"Good job, pilot!",
@@ -110,7 +110,7 @@ def final_screen():
                 terminate()
             elif event.type == pygame.KEYDOWN or event.type == pygame.MOUSEBUTTONDOWN:
                 pygame.mixer.music.stop()
-                pygame.mixer.music.load('C:/Users/Soltan/PycharmProjects/game-plain/data/mot.mp3')
+                pygame.mixer.music.load('data//mot.mp3')
                 pygame.mixer.music.play()
                 return
         pygame.display.flip()
@@ -130,10 +130,10 @@ y_fon = 0
 # Функция, имитирующая выстрелы
 def sho_v():
     pygame.mixer.music.stop()
-    pygame.mixer.music.load('C:/Users/Soltan/PycharmProjects/game-plain/data/rb.mp3')
+    pygame.mixer.music.load('data//rb.mp3')
     pygame.mixer.music.play()
     pygame.mixer.music.stop()
-    pygame.mixer.music.load('C:/Users/Soltan/PycharmProjects/game-plain/data/mot.mp3')
+    pygame.mixer.music.load('data//mot.mp3')
     pygame.mixer.music.play()
 
 
@@ -238,7 +238,7 @@ f_sprites.add(pl)
 # Спрайты
 
 # Музыка для игры
-pygame.mixer.music.load('C:/Users/Soltan/PycharmProjects/game-plain/data/mot.mp3')
+pygame.mixer.music.load('data//mot.mp3')
 pygame.mixer.music.play()
 
 running = True
